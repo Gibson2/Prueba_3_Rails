@@ -32,6 +32,15 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#Gema para el mejor manejo de las Imagenes en Heroku
+gem 'rails_12factor', group: :production
+
+#Gema para crear los usuarios
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+
+gem 'cancancan'
+
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,6 +48,13 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  #RuboCop
+  gem 'rubocop'
 end
 
 group :development do

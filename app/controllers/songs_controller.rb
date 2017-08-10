@@ -61,6 +61,13 @@ class SongsController < ApplicationController
     end
   end
 
+  # def add_genre(name)
+  #   @name = name
+  #   @added = Caught.create(genre_id: params[:id], name: @name)
+  #   redirect_to user_caughts_path(@name) 
+  # end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_song

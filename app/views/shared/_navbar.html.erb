@@ -20,6 +20,7 @@
         
         <% if current_user.present? %>
           <li><a href="<%= mysongs_path %>">MySongs</a></li>
+          <li><p>User: <%= current_user.name %></p></li>
         <% end %>
       </ul>
 
